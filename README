@@ -1,0 +1,27 @@
+Guice Module for Jersey Test Framework
+======================================
+
+Allows convenient dependency injection in test classes using Guice injection annotations.
+
+
+Usage:
+
+  class MyTest extends GuiceJerseyTest {
+
+       class MyModule extends JerseyModule {
+               protected void configure(Binder b) {
+                       b.bind(FooService.class);
+                       b.bind(BarResource.class);
+               }
+       }
+
+       @Inject
+       FooService service;
+  
+       public MyTest() {
+               super(MyModule.class);
+       }
+       
+  }
+
+
