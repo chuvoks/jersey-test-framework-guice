@@ -1,7 +1,10 @@
 Guice Module for Jersey Test Framework
 ======================================
 
-Allows convenient dependency injection in test classes using Guice injection annotations.
+Addon for Jersey Test Framework version 1.13.
+
+Allows convenient dependency injection of test classes using Guice 
+injection annotations.
 
 
 Usage:
